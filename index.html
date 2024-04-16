@@ -18,8 +18,6 @@
             padding: 0;
         }
 
-
-
         body {
             background-color: rgb(3, 5, 49);
             color: white;
@@ -83,13 +81,16 @@
         .leftSection {
             /* background-color: rgb(238, 9, 9); */
             font-size: 3rem;
+            font-size: 3rem;
             /* change it up to browser */
             /* margin: 70px 0; */
         }
-        .leftSection .buttons{
+
+        .leftSection .buttons {
             padding: 50px 0;
         }
-        .leftSection .btn{
+
+        .leftSection .btn {
             padding: 12px;
             background-color: #262a87;
             color: white;
@@ -97,17 +98,18 @@
             border-radius: 6px;
             font-size: 20px;
             cursor: pointer;
-            
+
         }
-        .leftSection .btn:hover{
-            
+
+        .leftSection .btn:hover {
+
             background-color: #1c1f86;
-            
-            
-            
+
+
+
             font-size: 21px;
-            
-            
+
+
         }
 
         .rightSection img {
@@ -119,7 +121,8 @@
         .purple {
             color: rgb(60, 8, 156);
         }
-        .text-grey{
+
+        .text-grey {
             color: grey;
         }
 
@@ -204,6 +207,74 @@
             color: grey;
             padding: 12px 0;
         }
+
+        @media screen and (max-width:1400px) {
+
+            body{
+                min-width: fit-content;
+                /* background-color: red; */
+            }
+            .leftSection {
+            font-size: 2.5rem;
+        }
+            .box {
+                flex-direction: column;
+            }
+
+            .secondSection .vertical {
+                height: unset;
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                left: 45px;
+            }
+
+            .secondSection .box {
+                width: 50vw;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+            /* footer{
+                /* display: none; */
+            } */
+
+            .firstSection{
+                flex-direction: column-reverse;
+            }
+            .leftSection{
+                width: 100%!important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .secondSection{
+                    height: 141vh;
+                }
+            .rightSection{
+                width: 721px!important;
+                display: flex;
+                justify-content:center ;
+
+                
+            }
+            .rightSection .img{
+                width:45vw;
+                margin-bottom: 73px;
+            }
+            .secondSection{
+               
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-top{
+                top:105px;
+            }
+        }
     </style>
 
 </head>
@@ -233,13 +304,13 @@
     <main>
         <section class="firstSection">
             <div class="leftSection">
-                Hi, My Name is <br> 
-                <span class="purple">Saeel Shinde</span>
+                <div>Hi, My Name is <br> <span class="purple">Saeel Shinde</span>
+                </div>
                 <div>and I am a Passionate</div>
                 <span id="element"></span>
-                <div class="button">
+                <div class="button"> 
                     <button class="btn">Download Resume</button>
-                    <button class="btn">Visit Github</button>
+                    <button class="btn"> <a style="text-decoration: none;color: white;" href="https://github.com/saeel12"> Github </a></button>
                 </div>
             </div>
             <div class="rightSection">
@@ -292,7 +363,8 @@
                 <div class="vertical"><img class="image-top" src="img/php.png" alt="">
                     <div class="vertical-title">PHP</div>
                     <div class="vertical-desc">
-                        PHP is a free, open-source scripting language that runs on the server to create dynamic web content.
+                        PHP is a free, open-source scripting language that runs on the server to create dynamic web
+                        content.
                     </div>
                 </div>
 
@@ -316,20 +388,24 @@
                     <li>Contact Me</li>
                 </ul>
             </div>
-            <div class="footer-third"><ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Project</li>
-                <li>Contact Me</li>
-            </ul></div>
-            <div class="footer-fourth"><ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Project</li>
-                <li>Contact Me</li>
-            </ul></div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Project</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Project</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
         </div>
         <div class="footer-rights">www.saeelsportfolio.com | All Rights reserved &#169; 2024</div>
     </footer>
